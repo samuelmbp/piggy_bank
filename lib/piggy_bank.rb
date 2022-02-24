@@ -12,4 +12,9 @@ class PiggyBank
             return 'cling'
         end
     end
-end 
+
+    def break
+        return_coins, @coins = @coins, 0
+        return return_coins
+    end
+end
