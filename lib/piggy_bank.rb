@@ -1,4 +1,9 @@
+
+
 class PiggyBank
+
+    attr_reader :coins
+
     def initialize
         @coins = 0
     end
