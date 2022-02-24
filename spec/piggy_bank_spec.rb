@@ -10,6 +10,7 @@ describe PiggyBank do
         end.to_not raise_error
         #assert
         end
+
         it 'can shake if there is money in it' do
           expect do
             piggy_bank = PiggyBank.new
@@ -17,5 +18,11 @@ describe PiggyBank do
           end.to_not raise_error
         end
 
+        it 'can shake if there is money in it' do
+            expect do
+              piggy_bank = PiggyBank.new
+              piggy_bank.shake
+            end.to output('').to_stdout
+          end
     end
 
