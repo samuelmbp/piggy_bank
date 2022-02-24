@@ -9,7 +9,7 @@ class PiggyBank
 
     def shake
         if @coins > 0
-            puts "cling"
+            return 'cling'
         end
     end
 end 
