@@ -11,6 +11,13 @@ describe PiggyBank do
     #assert
   end
 
+  # it 'it does not return an error when it runs' do
+  #   expect do
+  #     piggy_bank = PiggyBank.new
+  #     piggy_bank.shake
+  #   end.to_not raise_error
+  # end
+
   it 'will not shake if there is no money in it' do
     piggy_bank = PiggyBank.new
     expect(piggy_bank.shake).to eq(nil)
