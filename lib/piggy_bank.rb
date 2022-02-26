@@ -23,3 +23,9 @@ class PiggyBank
         return return_coins
     end
 end
+
+piggy_bank = PiggyBank.new
+piggy_bank.put_coins(18)
+piggy_bank.put_coins(7)
+p piggy_bank.shake
+p piggy_bank.break
